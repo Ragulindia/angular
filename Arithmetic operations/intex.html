@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>calculator</title>
+
+</head>
+
+<body>
+
+<!-- --------------     arithmatic operation    ---------->
+
+  <div>
+    <h2 id="header">Arithmatic Operations</h2>
+
+
+    <input type="number" id="val1" placeholder="enter the value 1">
+    <br><br>
+    <input type="number" id="val2" placeholder="enter the value 2"><br><br>
+    <input type="number" id="val3" placeholder="answer" readonly><br><br>
+    <button id="addi" onclick="calculator('add')">Add</button>
+    <button id="subt" onclick="calculator('sub')">Sub</button>
+    <button id="mult" onclick="calculator('mul')">Mul</button>
+    <button id="divi" onclick="calculator('div')">Div</button>
+  </div>
+  <br>
+  <div>
+    <input type="number" id="n1" placeholder="Enter the vale 1">
+    <select id="dropdown">
+      <option id="plus" value="+">+</option>
+      <option id="minus" value="-">-</option>
+      <option id="mul" value="*">*</option>
+      <option id="div" value="/">/</option>
+    </select>
+    <input type="number" id="n2" placeholder="Enter the value 2">
+    <button onclick="calc()" id="btn">=</button>
+    <input type="number" id="n3" placeholder="Answer" readonly>
+  </div>
+  <hr>
+
+<!-------   Tenary operators    ------>
+
+  <h2 id="tery">Ternary operators</h2>
+  <input type="number" id="Value1"><br><br><input type="number" id="Value2">
+  <button onclick="terybtn()">Button</button>
+  <br><br>
+  <p id="tery_para"></p>
+
+  <hr>
+
+  <!-------   for loop   ------>
+
+  <h2>For loop</h2>
+  <input type="number" id="for_input">
+  <button onclick="forloop()">submit</button>
+  <p id="for_para">
+
+
+  </p>
+  <hr>
+
+  <!--------    string methods     ---------->
+
+  <diV>
+    <h2>String methods</h2>
+  <input type="text" id="string">
+  <button onclick="stringbtn()">String</button>
+  <p id="stgln"></p>
+  <p id="stgrp"></p>
+  <p id="stgup"></p>
+  <p id="stglc"></p>
+  <p id="stgcon"></p>
+  <p id="stgtm"></p>
+  <p id="stgch"></p>
+  <p id="stgio"></p>
+  <p id="stgslice"></p>
+  <p id="stgsbslice"></p>
+  <p id="stgsplit"></p>
+  </diV>
+  <hr>
+
+  <!-----------dropdown assignment------------>
+
+  <div>
+
+      <h2>Find the country capital</h2>
+      <select onchange="dropdown_country()" id="slt_coun">
+        <option value="1">America</option>
+        <option value="2">Australia</option>
+        <option value="3">Canada</option>
+        <option value="4">England</option>
+        <option value="5">India</option>
+        
+      </select>
+      <select id="slt_cap" onchange="dropdown_capital()">
+        <option value="1">Washington D.C</option>
+        <option value="2">Canberra</option>
+        <option value="3">Ottawa</option>
+        <option value="4">Londan</option>
+        <option value="5">New Delhi</option>
+
+      </select>
+  </div>
+  <hr>
+
+  <!-----------Total Days calculation--------->
+
+  <div>
+    <h2> Find the number of Days in year</h2>
+    <input type="number" id="year" placeholder="Enter the year" required>
+    <select id="month">
+      <option value="1">January</option>
+      <option value="2">February</option>
+      <option value="3">March</option>
+      <option value="4">April</option>
+      <option value="5">May</option>
+      <option value="6">June</option>
+      <option value="7">July</option>
+      <option value="8">August</option>
+      <option value="9">September</option>
+      <option value="10">October</option>
+      <option value="11">Navember</option>
+      <option value="12">December</option>
+    </select>
+    <button onclick="sbt_year()" id="btn_year">Find</button>
+    <p id="p_year"></p>
+    <p id="total_days"></p>
+    <p id="p_month"></p>
+
+  </div>
+  <script src="C:\Users\Demo\Desktop\Arithmetic operations\calc.js"></script>
+</body>
+
+</html>

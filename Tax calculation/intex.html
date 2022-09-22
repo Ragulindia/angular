@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tax calaculation</title>
+        <style>
+            table,tr,td,th {
+                border: 1px solid red;
+                border-collapse: collapse;
+                box-sizing: border-box;
+                margin: 20px;
+                padding: 10px;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div id="tax_calc">
+            <h1>Tax colculation</h1>
+            <div>
+                <span>First Name</span>
+            </div>
+            <div>
+                <input type="text" id="fname"  name="fname" >
+            </div>
+            <div>
+                <span>Lirst Name</span>
+            </div>
+            <div>
+                <input type="text" id="lname"  name="fname" >
+            </div>
+            <div>
+                <span>Age</span>
+            </div>
+            <div>
+                <input type="number" id="age"  name="age" >
+            </div>
+            <div>
+                <span>Gender</span>
+            </div>
+            <div>
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div>
+                <span>Annual income</span>
+            </div>
+            <div>
+                <input type="number" id="income"  name="income" placeholder="in Rupees">
+            </div>
+            <div>
+                <button id="btn" onclick="calculate()">Calculate</button>
+            </div>
+            <div>
+                <span>Tax amount</span>
+            </div>
+            <div>
+                <input type="text" id="taxamount" name="taxamount" readonly placeholder="in Rupees">
+            </div>
+        </div>
+        <div>
+            <button onclick="window.print()">Print</button>
+        </div>
+        <div>
+            <table id="tabel">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Annual Income</th>
+                    <th>Tax Payable</th>
+                </tr>
+                <tr>
+                    <td id="fi_name"></td>
+                    <td id="la_name"></td>
+                    <td id="user_age"></td>
+                    <td id="ann_income"></td>
+                    <td id="tax_pay"></td>
+                </tr>
+
+            </table>
+        </div>
+        <script src="C:\Users\Demo\Desktop\Tax calculation\tax_script.js"></script>
+    </body>
+</html>

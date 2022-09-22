@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grade calculation</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\Demo\Desktop\grade calculation\grade.css">
+</head>
+
+<body>
+    <div class="grade">
+        <h1>Calculate the grade</h1>
+        <div class="grade_claculation">
+            <div class="lab">
+                <div class="label1">
+
+                    <div class="label">
+
+                        <label for="rollNo">Student Roll No:</label>
+                    </div>
+                    <div class="input_box">
+                        <input type="text" name="rollNo" id="rollNo" maxlength="6" required>
+                    </div>
+
+
+                    <div class="label">
+                        <label for="stdName">Student Name:</label>
+                    </div>
+                    <div class="input_box">
+                        <input type="text" name="stdName" id="stdName" required>
+                    </div>
+                </div>
+                <div class="label1">
+                    <div class="label">
+                        <label for="standard">Standard:</label>
+                    </div>
+                    <div class="input_box">
+                        <input type="number" name="standard" id="standard" required>
+                    </div>
+
+                    <div class="label">
+                        <label for="section">Section:</label>
+                    </div>
+                    <div class="input_box">
+                        <input type="text" name="section" id="section" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="label">
+                <label for="tamil">Tamil:</label>
+            </div>
+            <div class="input_box">
+                <input type="number" name="tamil" id="tamil" required max="100">
+            </div>
+
+            <div class="label">
+                <label for="engilsh">English:</label>
+            </div>
+            <div class="input_box">
+                <input type="number" name="english" id="english" required max="100">
+            </div>
+
+            <div class="label">
+                <label for="mathematics">Mathematics:</label>
+            </div>
+            <div class="input_box">
+                <input type="number" name="mathematics" id="mathematics" required max="100">
+            </div>
+
+            <div class="label">
+                <label for="chemistry">Chemistry:</label>
+            </div>
+            <div class="input_box">
+                <input type="number" name="chemistry" id="chemistry" required max="100">
+            </div>
+
+            <div class="label">
+                <label for="physics">Physics:</label>
+            </div>
+            <div class="input_box">
+                <input type="number" name="physics" id="physics" required max="100">
+            </div>
+
+            <div class="label">
+                <label for="com_sci">Computer Science:</label>
+            </div>
+            <div class="input_box">
+                <input type="number" name="com_sci" id="com_sci" required max="100">
+            </div>
+
+            <div class="input_box">
+                <button type="submit" id="sbt" onclick="calcu_grade()">Calculate</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="output">
+        <p id="pName"></p>
+        <p id="pRoll"></p>
+        <p id="pClass"></p>
+        <p id="pSection"></p>
+        <p id="pTamil"></p>
+        <p id="pEng"></p>
+        <p id="pMat"></p>
+        <p id="pChe"></p>
+        <p id="pPhy"></p>
+        <p id="pCs"></p>
+        <p id="pTotal"></p>
+        <p id="pname"></p>
+        <p id="pname"></p>
+        <p id="pname"></p>
+
+
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>Roll Name</th>
+                <th>Name</th>
+                <th>Standard</th>
+                <th>Section</th>
+                <th>Total Marks</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td id="pRoll"></td>
+                <td id="pName"></td>
+                <td id="pClass"></td>
+                <td id="pSection"></td>
+                <td id=""></td>
+                <td id=""></td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="C:\Users\Demo\Desktop\grade calculation\grade.js"></script>
+</body>
+
+</html>

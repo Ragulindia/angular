@@ -1,0 +1,120 @@
+body {
+    background-color: lightcyan;
+}
+
+.header {
+    margin-left: 0px;
+}
+
+.hdra {
+    float: right;
+}
+
+.hdra img {
+    width: 50px;
+    height: 50px;
+}
+
+.hdrul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 35%;
+
+
+
+}
+
+.hdrli {
+    float: left;
+    width: 75px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-color: rgb(238, 200, 243);
+
+
+}
+
+.hdrli a {
+    text-decoration: none;
+    display: block;
+}
+
+.hdrli a:hover {
+    color: white;
+    background-color: rgb(19, 241, 19);
+}
+
+.bdydiv {
+    clear: both;
+    margin: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.bdydiv h2 {
+    text-align: center;
+    color: blue;
+}
+
+.tbl tr,
+th,
+td {
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.tbl table {
+    background-color: aqua;
+    color: brown;
+}
+
+/* This is Regestration form style*/
+.frm {
+    clear: both;
+
+
+
+
+}
+
+.frm h2 {
+    text-align: center;
+
+}
+
+.frmlb {
+    float: left;
+    width: 30%;
+    margin-top: 8px;
+}
+
+.frmin {
+    float: left;
+    width: 70%;
+    margin-top: 8px;
+}
+
+.sbt {
+    clear: both;
+}
+
+.sbt input {
+    clear: both;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+}
+
+.sbt input:hover {
+    background-color: aqua;
+    color: black;
+}
+
+#btn {
+    border-radius: 5px;
+    padding: 4px;
+}

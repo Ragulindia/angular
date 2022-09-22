@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>regstration</title>
+    <link rel="stylesheet" href="C:\Users\Demo\Desktop\New folder\style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/699b461d88.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="C:\Users\Demo\Desktop\New folder\intex.html" class="hdra">
+            <img src="C:\Users\Demo\Desktop\New folder\images\design-logo.jpg" alt="logo" title="logo" </a>
+            <ul class="hdrul">
+                <li class="hdrli"><a href="C:\Users\Demo\Desktop\New folder\intex.html">Home</a></li>
+                <li class="hdrli"><a href="C:\Users\Demo\Desktop\New folder\about.html">About</a></li>
+                <li class="hdrli"><a href="C:\Users\Demo\Desktop\New folder\reg.html">Reg</a></li>
+                <li class="hdrli"><a href="C:\Users\Demo\Desktop\New folder\contact.html">Contact_Us</a></li>
+
+
+            </ul>
+    </div>
+    <i class="fa-solid fa-house"></i>
+    <div class="frm">
+        <h2 style="color:red ;" id="regid">Registration Form</h2>
+        <form method="post" action="C:\Users\Demo\Desktop\New folder\intex.html">
+            <div class="frmlb">
+                <label>First Name </label>
+            </div>
+            <div class="frmin"><input type="text" id="fname" name="fname" required autofocus
+                    placeholder="Enter your firstname" onkeypress="firstname()">
+            </div>
+            <div class="frmlb">
+                <label>Last Name </label>
+            </div>
+            <div class="frmin"><input type="text" id="lname" name="lname" required maxlength="5">
+            </div>
+            <div class="frmlb">
+                <label>Date of Birth </label>
+            </div>
+
+            <div class="frmin"><input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="frmlb">
+                <label>Email </label>
+            </div>
+            <div class="frmin">
+                <input type="email" id="email" name="email" required autocomplete="on">
+            </div>
+            <div class="frmlb">
+                <label>Password </label>
+            </div>
+            <div class="frmin">
+                <input type="password" id="password" name="password" required>
+
+            </div>
+            <div class="frmlb">
+                <label></label>Phone Number </label>
+            </div>
+            <div class="frmin">
+                <input type="text" id="number" name="number" maxlength="10" required>
+            </div>
+            <div class="frmlb">
+                <label>Gender </label>
+            </div>
+            <div class="frmin">
+
+                <input type="radio" id="male" name="gender" required value="male" onchange="gen()">male
+                <input type="radio" id="fmale" name="gender" required value="female" onchange="gen()">female
+            </div>
+            <div class="frmlb">
+                <label>Year of Passing </label>
+            </div>
+            <div class="frmin">
+                <select onchange="selectcity()" id="city">
+                    <option value="1">2022</option>
+                    <option value="2">2021</option>
+                    <option selected value="3">2020</option>
+                    <option value="4">2019</option>
+                </select>
+            </div>
+            <div class="frmlb">
+                <label>Hoboies </label>
+            </div>
+            <div class="frmin">
+                <input type="checkbox" id="reading" name="reading" checked>Reading Books
+                <input type="checkbox" id="playing" name="playing">Playing Games
+                <input type="checkbox" id="watching" name="watching">Watching TV
+            </div>
+            <div class="frmlb">
+                <label>Upload document </label>
+            </div>
+            <div class="frmin">
+                <input type="file" id="file" name="file" required>
+
+            </div>
+            <div class="frmlb">
+                <label>Enter your number</label>
+            </div>
+            <div class="frmin">
+
+                <input type="tel" id="pnum" name="pnum" pattern="[0-9]{10}">
+            </div>
+            <div class="sbt">
+                <input type="submit" value="Submit" onclick="myfunction()">
+                <input type="reset" value="Reset">
+                <button id="btn" value="Button" onclick="colo()" onmouseover="mousechange()"
+                    onmouseout="mouseout()">button
+                </button>
+
+
+            </div>
+
+
+        </form>
+    </div>
+    <div>
+        <span id="sltvalue"></span><br>
+        <span>Selected Gender:</span><span id="sltgen"></span>
+
+    </div>
+    <script src="C:\Users\Demo\Desktop\New folder\script.js"></script>
+
+ <i class="fa-solid fa-house"></i>
+</body>
+
+</html>
